@@ -8,7 +8,6 @@ const styles = {
   itemIndicator: "",
   item: "",
   itemTrigger: "",
-  rootProvider: "",
 };
 
 const Root = React.forwardRef<HTMLDivElement, Primitive.RootProps>(
@@ -70,7 +69,7 @@ const RootProvider = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <Primitive.RootProvider
     ref={ref}
-    className={cn(styles.rootProvider, className)}
+    className={cn(styles.root, className)}
     {...props}
   />
 ));
