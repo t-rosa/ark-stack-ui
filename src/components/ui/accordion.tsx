@@ -3,24 +3,13 @@ import { Accordion as Primitive } from "@ark-ui/react";
 import * as React from "react";
 
 const styles = {
-  rootProvider: "",
   root: "border",
-  item: "",
-  itemTrigger: "",
   itemContent: "",
   itemIndicator: "",
+  item: "",
+  itemTrigger: "",
+  rootProvider: "",
 };
-
-const RootProvider = React.forwardRef<
-  HTMLDivElement,
-  Primitive.RootProviderProps
->(({ className, ...props }, ref) => (
-  <Primitive.RootProvider
-    ref={ref}
-    className={cn(styles.rootProvider, className)}
-    {...props}
-  />
-));
 
 const Root = React.forwardRef<HTMLDivElement, Primitive.RootProps>(
   ({ className, ...props }, ref) => (
@@ -71,6 +60,17 @@ const ItemIndicator = React.forwardRef<
   <Primitive.ItemIndicator
     ref={ref}
     className={cn(styles.itemIndicator, className)}
+    {...props}
+  />
+));
+
+const RootProvider = React.forwardRef<
+  HTMLDivElement,
+  Primitive.RootProviderProps
+>(({ className, ...props }, ref) => (
+  <Primitive.RootProvider
+    ref={ref}
+    className={cn(styles.rootProvider, className)}
     {...props}
   />
 ));
