@@ -29,6 +29,10 @@ import { ColorPickerBasic } from "./components/examples/color-picker/color-picke
 import { ColorPickerControlled } from "./components/examples/color-picker/color-picker-controlled";
 import { ColorPickerRootProvider } from "./components/examples/color-picker/color-picker-root-provider";
 import { ColorPickerWithField } from "./components/examples/color-picker/color-picker-with-field";
+import { ComboboxAdvanced } from "./components/examples/combobox/combobox-advanced";
+import { ComboboxBasic } from "./components/examples/combobox/combobox-basic";
+import { ComboboxRootProvider } from "./components/examples/combobox/combobox-root-provider";
+import { ComboboxWithField } from "./components/examples/combobox/combobox-with-field";
 
 function App() {
   return (
@@ -77,6 +81,12 @@ function App() {
         <ColorPickerControlled />
         <ColorPickerWithField />
         <ColorPickerRootProvider />
+      </section>
+      <section id="combobox">
+        <ComboboxBasic />
+        <ComboboxAdvanced />
+        <ComboboxWithField />
+        <ComboboxRootProvider />
       </section>
     </main>
   );
