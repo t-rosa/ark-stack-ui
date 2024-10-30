@@ -37,6 +37,11 @@ import { DatePickerBasic } from "./components/examples/date-picker/date-picker-b
 import { DatePickerRange } from "./components/examples/date-picker/date-picker-range";
 import { DatePickerRootProvider } from "./components/examples/date-picker/date-picker-root-provider";
 import { DatePickerStandalone } from "./components/examples/date-picker/date-picker-standalone";
+import { DialogBasic } from "./components/examples/dialog/dialog-basic";
+import { DialogControlled } from "./components/examples/dialog/dialog-controlled";
+import { DialogLazyMount } from "./components/examples/dialog/dialog-lazy-mount";
+import { DialogRenderFn } from "./components/examples/dialog/dialog-render-fn";
+import { DialogRootProvider } from "./components/examples/dialog/dialog-root-provider";
 
 function App() {
   return (
@@ -97,6 +102,13 @@ function App() {
         <DatePickerRange />
         <DatePickerStandalone />
         <DatePickerRootProvider />
+      </section>
+      <section id="dialog">
+        <DialogBasic />
+        <DialogControlled />
+        <DialogLazyMount />
+        <DialogRenderFn />
+        <DialogRootProvider />
       </section>
     </main>
   );
