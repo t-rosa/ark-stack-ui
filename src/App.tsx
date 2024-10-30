@@ -6,6 +6,10 @@ import { AccordionRootProvider } from "./components/examples/accordion/accordion
 import { AvatarBasic } from "./components/examples/avatar/avatar-basic";
 import { AvatarEvents } from "./components/examples/avatar/avatar-events";
 import { AvatarRootProvider } from "./components/examples/avatar/avatar-root-provider";
+import { CarouselBasic } from "./components/examples/carousel/carousel-basic";
+import { CarouselControlled } from "./components/examples/carousel/carousel-controlled";
+import { CarouselCustomized } from "./components/examples/carousel/carousel-customized";
+import { CarouselRootProvider } from "./components/examples/carousel/carousel-root-provider";
 
 function App() {
   return (
@@ -17,10 +21,16 @@ function App() {
         <AccordionMultiple />
         <AccordionRootProvider />
       </section>
-      <section id="accordion" className="max-w-7xl mx-auto">
+      <section id="avatar" className="max-w-7xl mx-auto">
         <AvatarBasic />
         <AvatarEvents />
         <AvatarRootProvider />
+      </section>
+      <section id="carousel" className="max-w-7xl mx-auto">
+        <CarouselBasic />
+        <CarouselControlled />
+        <CarouselCustomized />
+        <CarouselRootProvider />
       </section>
     </main>
   );
