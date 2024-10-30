@@ -17,29 +17,31 @@ import { CheckboxIndeterminate } from "./components/examples/checkbox/checkbox-i
 import { CheckboxRenderProp } from "./components/examples/checkbox/checkbox-render-props";
 import { CheckboxRootProvider } from "./components/examples/checkbox/checkbox-root-provider";
 import { CheckboxWithField } from "./components/examples/checkbox/checkbox-with-field";
+import { ClipboardBasic } from "./components/examples/clipboard/clipboard-basic";
+import { ClipboardRootProvider } from "./components/examples/clipboard/clipboard-root-provider";
 
 function App() {
   return (
-    <main className="space-y-3">
-      <section id="accordion" className="max-w-7xl mx-auto">
+    <main>
+      <section id="accordion">
         <AccordionBasic />
         <AccordionCollapsible />
         <AccordionHorizontal />
         <AccordionMultiple />
         <AccordionRootProvider />
       </section>
-      <section id="avatar" className="max-w-7xl mx-auto">
+      <section id="avatar">
         <AvatarBasic />
         <AvatarEvents />
         <AvatarRootProvider />
       </section>
-      <section id="carousel" className="max-w-7xl mx-auto">
+      <section id="carousel">
         <CarouselBasic />
         <CarouselControlled />
         <CarouselCustomized />
         <CarouselRootProvider />
       </section>
-      <section id="checkbox" className="max-w-7xl mx-auto">
+      <section id="checkbox">
         <CheckboxBasic />
         <CheckboxControlled />
         <CheckboxIndeterminate />
@@ -47,6 +49,10 @@ function App() {
         <CheckboxRenderProp />
         <CheckboxWithField />
         <CheckboxRootProvider />
+      </section>
+      <section id="clipboard">
+        <ClipboardBasic />
+        <ClipboardRootProvider />
       </section>
     </main>
   );
