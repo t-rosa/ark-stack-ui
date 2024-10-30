@@ -25,6 +25,10 @@ import { CollapsibleLazyMountAndUnmountOnExit } from "./components/examples/coll
 import { CollapsibleOnExitComplete } from "./components/examples/collapsible/collapsible-on-exit-complete";
 import { CollapsibleRootProvider } from "./components/examples/collapsible/collapsible-root-provider";
 import { CollapsibleUnmountOnExit } from "./components/examples/collapsible/collapsible-unmount-on-exit";
+import { ColorPickerBasic } from "./components/examples/color-picker/color-picker-basic";
+import { ColorPickerControlled } from "./components/examples/color-picker/color-picker-controlled";
+import { ColorPickerRootProvider } from "./components/examples/color-picker/color-picker-root-provider";
+import { ColorPickerWithField } from "./components/examples/color-picker/color-picker-with-field";
 
 function App() {
   return (
@@ -67,6 +71,12 @@ function App() {
         <CollapsibleUnmountOnExit />
         <CollapsibleLazyMountAndUnmountOnExit />
         <CollapsibleRootProvider />
+      </section>
+      <section id="color-picker">
+        <ColorPickerBasic />
+        <ColorPickerControlled />
+        <ColorPickerWithField />
+        <ColorPickerRootProvider />
       </section>
     </main>
   );
