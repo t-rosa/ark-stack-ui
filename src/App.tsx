@@ -19,6 +19,12 @@ import { CheckboxRootProvider } from "./components/examples/checkbox/checkbox-ro
 import { CheckboxWithField } from "./components/examples/checkbox/checkbox-with-field";
 import { ClipboardBasic } from "./components/examples/clipboard/clipboard-basic";
 import { ClipboardRootProvider } from "./components/examples/clipboard/clipboard-root-provider";
+import { CollapsibleBasic } from "./components/examples/collapsible/collapsible-basic";
+import { CollapsibleLazyMount } from "./components/examples/collapsible/collapsible-lazy-mount";
+import { CollapsibleLazyMountAndUnmountOnExit } from "./components/examples/collapsible/collapsible-lazy-mount-and-unmount-on-exit";
+import { CollapsibleOnExitComplete } from "./components/examples/collapsible/collapsible-on-exit-complete";
+import { CollapsibleRootProvider } from "./components/examples/collapsible/collapsible-root-provider";
+import { CollapsibleUnmountOnExit } from "./components/examples/collapsible/collapsible-unmount-on-exit";
 
 function App() {
   return (
@@ -53,6 +59,14 @@ function App() {
       <section id="clipboard">
         <ClipboardBasic />
         <ClipboardRootProvider />
+      </section>
+      <section id="collapsible">
+        <CollapsibleBasic />
+        <CollapsibleOnExitComplete />
+        <CollapsibleLazyMount />
+        <CollapsibleUnmountOnExit />
+        <CollapsibleLazyMountAndUnmountOnExit />
+        <CollapsibleRootProvider />
       </section>
     </main>
   );
