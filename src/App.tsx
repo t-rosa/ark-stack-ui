@@ -33,6 +33,10 @@ import { ComboboxAdvanced } from "./components/examples/combobox/combobox-advanc
 import { ComboboxBasic } from "./components/examples/combobox/combobox-basic";
 import { ComboboxRootProvider } from "./components/examples/combobox/combobox-root-provider";
 import { ComboboxWithField } from "./components/examples/combobox/combobox-with-field";
+import { DatePickerBasic } from "./components/examples/date-picker/date-picker-basic";
+import { DatePickerRange } from "./components/examples/date-picker/date-picker-range";
+import { DatePickerRootProvider } from "./components/examples/date-picker/date-picker-root-provider";
+import { DatePickerStandalone } from "./components/examples/date-picker/date-picker-standalone";
 
 function App() {
   return (
@@ -87,6 +91,12 @@ function App() {
         <ComboboxAdvanced />
         <ComboboxWithField />
         <ComboboxRootProvider />
+      </section>
+      <section id="date-picker">
+        <DatePickerBasic />
+        <DatePickerRange />
+        <DatePickerStandalone />
+        <DatePickerRootProvider />
       </section>
     </main>
   );
