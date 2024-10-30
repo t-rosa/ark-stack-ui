@@ -1,4 +1,5 @@
-import { Carousel, useCarousel } from "@ark-ui/react/carousel";
+import { Carousel } from "@/components/ui/carousel";
+import { useCarousel } from "@ark-ui/react/carousel";
 
 export function CarouselRootProvider() {
   const images = [

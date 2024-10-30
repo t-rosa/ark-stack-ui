@@ -1,4 +1,4 @@
-import { Carousel } from "@ark-ui/react/carousel";
+import { Carousel } from "@/components/ui/carousel";
 import { useState } from "react";
 
 export function CarouselControlled() {
