@@ -1,8 +1,9 @@
 import { ColorPicker } from "@/components/ui/color-picker";
+import { Field } from "@/components/ui/field";
 import { parseColor } from "@ark-ui/react/color-picker";
-import { Field } from "@ark-ui/react/field";
+import { FieldRootProps } from "@ark-ui/react/field";
 
-export function ColorPickerWithField(props: Field.RootProps) {
+export function ColorPickerWithField(props: FieldRootProps) {
   return (
     <Field.Root {...props}>
       <ColorPicker.Root defaultValue={parseColor("#eb5e41")}>

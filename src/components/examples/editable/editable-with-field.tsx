@@ -1,7 +1,8 @@
 import { Editable } from "@/components/ui/editable";
-import { Field } from "@ark-ui/react/field";
+import { Field } from "@/components/ui/field";
+import { FieldRootProps } from "@ark-ui/react/field";
 
-export function EditableWithField(props: Field.RootProps) {
+export function EditableWithField(props: FieldRootProps) {
   return (
     <Field.Root {...props}>
       <Editable.Root placeholder="Placeholder" activationMode="dblclick">

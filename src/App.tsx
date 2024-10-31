@@ -46,6 +46,9 @@ import { EditableBasic } from "./components/examples/editable/editable-basic";
 import { EditableCustomControls } from "./components/examples/editable/editable-custom-controls";
 import { EditableRootProvider } from "./components/examples/editable/editable-root-provider";
 import { EditableWithField } from "./components/examples/editable/editable-with-field";
+import { FieldInput } from "./components/examples/field/field-input";
+import { FieldSelect } from "./components/examples/field/field-select";
+import { FieldTextarea } from "./components/examples/field/field-textarea";
 
 function App() {
   return (
@@ -119,6 +122,11 @@ function App() {
         <EditableCustomControls />
         <EditableWithField />
         <EditableRootProvider />
+      </section>
+      <section id="field">
+        <FieldInput />
+        <FieldTextarea />
+        <FieldSelect />
       </section>
     </main>
   );

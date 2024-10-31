@@ -1,8 +1,9 @@
 import { Checkbox } from "@/components/ui/checkbox";
-import { Field } from "@ark-ui/react/field";
+import { Field } from "@/components/ui/field";
+import { FieldRootProps } from "@ark-ui/react/field";
 import { CheckIcon, MinusIcon } from "lucide-react";
 
-export function CheckboxWithField(props: Field.RootProps) {
+export function CheckboxWithField(props: FieldRootProps) {
   return (
     <Field.Root {...props}>
       <Checkbox.Root>

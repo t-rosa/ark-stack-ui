@@ -1,8 +1,9 @@
 import { Combobox } from "@/components/ui/combobox";
+import { Field } from "@/components/ui/field";
 import { createListCollection } from "@ark-ui/react/combobox";
-import { Field } from "@ark-ui/react/field";
+import { FieldRootProps } from "@ark-ui/react/field";
 
-export function ComboboxWithField(props: Field.RootProps) {
+export function ComboboxWithField(props: FieldRootProps) {
   const collection = createListCollection({ items: ["React", "Solid", "Vue"] });
 
   return (
