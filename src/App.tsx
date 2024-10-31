@@ -42,6 +42,10 @@ import { DialogControlled } from "./components/examples/dialog/dialog-controlled
 import { DialogLazyMount } from "./components/examples/dialog/dialog-lazy-mount";
 import { DialogRenderFn } from "./components/examples/dialog/dialog-render-fn";
 import { DialogRootProvider } from "./components/examples/dialog/dialog-root-provider";
+import { EditableBasic } from "./components/examples/editable/editable-basic";
+import { EditableCustomControls } from "./components/examples/editable/editable-custom-controls";
+import { EditableRootProvider } from "./components/examples/editable/editable-root-provider";
+import { EditableWithField } from "./components/examples/editable/editable-with-field";
 
 function App() {
   return (
@@ -109,6 +113,12 @@ function App() {
         <DialogLazyMount />
         <DialogRenderFn />
         <DialogRootProvider />
+      </section>
+      <section id="editable">
+        <EditableBasic />
+        <EditableCustomControls />
+        <EditableWithField />
+        <EditableRootProvider />
       </section>
     </main>
   );
