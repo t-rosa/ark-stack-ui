@@ -49,6 +49,9 @@ import { EditableWithField } from "./components/examples/editable/editable-with-
 import { FieldInput } from "./components/examples/field/field-input";
 import { FieldSelect } from "./components/examples/field/field-select";
 import { FieldTextarea } from "./components/examples/field/field-textarea";
+import { FieldsetBasic } from "./components/examples/fieldset/fieldset-basic";
+import { FieldsetWithCheckbox } from "./components/examples/fieldset/fieldset-with-checkbox";
+import { FieldsetWithField } from "./components/examples/fieldset/fieldset-with-field";
 
 function App() {
   return (
@@ -127,6 +130,11 @@ function App() {
         <FieldInput />
         <FieldTextarea />
         <FieldSelect />
+      </section>
+      <section id="fieldset">
+        <FieldsetBasic />
+        <FieldsetWithField />
+        <FieldsetWithCheckbox />
       </section>
     </main>
   );
