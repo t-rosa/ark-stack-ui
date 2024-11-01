@@ -52,6 +52,9 @@ import { FieldTextarea } from "./components/examples/field/field-textarea";
 import { FieldsetBasic } from "./components/examples/fieldset/fieldset-basic";
 import { FieldsetWithCheckbox } from "./components/examples/fieldset/fieldset-with-checkbox";
 import { FieldsetWithField } from "./components/examples/fieldset/fieldset-with-field";
+import { FileUploadBasic } from "./components/examples/file-upload/file-upload-basic";
+import { FileUploadRootProvider } from "./components/examples/file-upload/file-upload-root-provider";
+import { FileUploadWithField } from "./components/examples/file-upload/file-upload-with-field";
 
 function App() {
   return (
@@ -135,6 +138,11 @@ function App() {
         <FieldsetBasic />
         <FieldsetWithField />
         <FieldsetWithCheckbox />
+      </section>
+      <section id="file-upload">
+        <FileUploadBasic />
+        <FileUploadWithField />
+        <FileUploadRootProvider />
       </section>
     </main>
   );
