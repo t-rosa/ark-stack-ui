@@ -59,6 +59,15 @@ import { HoverCardBasic } from "./components/examples/hover-card/hover-card-basi
 import { HoverCardControlled } from "./components/examples/hover-card/hover-card-controlled";
 import { HoverCardPositioning } from "./components/examples/hover-card/hover-card-positioning";
 import { HoverCardRootProvider } from "./components/examples/hover-card/hover-card-root-provider";
+import { MenuBasic } from "./components/examples/menu/menu-basic";
+import { MenuCheckbox } from "./components/examples/menu/menu-checkbox";
+import { MenuContext } from "./components/examples/menu/menu-context";
+import { MenuControlled } from "./components/examples/menu/menu-controlled";
+import { MenuGroup } from "./components/examples/menu/menu-group";
+import { MenuNested } from "./components/examples/menu/menu-nested";
+import { MenuRadioGroup } from "./components/examples/menu/menu-radio-group";
+import { MenuRootProvider } from "./components/examples/menu/menu-root-provider";
+import { MenuSeparator } from "./components/examples/menu/menu-separator";
 
 function App() {
   return (
@@ -153,6 +162,17 @@ function App() {
         <HoverCardControlled />
         <HoverCardPositioning />
         <HoverCardRootProvider />
+      </section>
+      <section id="menu">
+        <MenuBasic />
+        <MenuControlled />
+        <MenuGroup />
+        <MenuSeparator />
+        <MenuContext />
+        <MenuNested />
+        <MenuCheckbox />
+        <MenuRadioGroup />
+        <MenuRootProvider />
       </section>
     </main>
   );
