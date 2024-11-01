@@ -68,6 +68,15 @@ import { MenuNested } from "./components/examples/menu/menu-nested";
 import { MenuRadioGroup } from "./components/examples/menu/menu-radio-group";
 import { MenuRootProvider } from "./components/examples/menu/menu-root-provider";
 import { MenuSeparator } from "./components/examples/menu/menu-separator";
+import { NumberInputBasic } from "./components/examples/number-input/number-input-baisc";
+import { NumberInputFormUsage } from "./components/examples/number-input/number-input-form-usage";
+import { NumberInputFormatted } from "./components/examples/number-input/number-input-formatted";
+import { NumberInputMinMax } from "./components/examples/number-input/number-input-min-max";
+import { NumberInputMouseWheel } from "./components/examples/number-input/number-input-mouse-wheel";
+import { NumberInputNoClamp } from "./components/examples/number-input/number-input-no-clamp";
+import { NumberInputRootProvider } from "./components/examples/number-input/number-input-root-provider";
+import { NumberInputScrubber } from "./components/examples/number-input/number-input-scrubber";
+import { NumberInputWithField } from "./components/examples/number-input/number-input-with-field";
 
 function App() {
   return (
@@ -173,6 +182,17 @@ function App() {
         <MenuCheckbox />
         <MenuRadioGroup />
         <MenuRootProvider />
+      </section>
+      <section id="number-input">
+        <NumberInputBasic />
+        <NumberInputMinMax />
+        <NumberInputScrubber />
+        <NumberInputMouseWheel />
+        <NumberInputNoClamp />
+        <NumberInputFormUsage />
+        <NumberInputFormatted />
+        <NumberInputWithField />
+        <NumberInputRootProvider />
       </section>
     </main>
   );
