@@ -55,6 +55,10 @@ import { FieldsetWithField } from "./components/examples/fieldset/fieldset-with-
 import { FileUploadBasic } from "./components/examples/file-upload/file-upload-basic";
 import { FileUploadRootProvider } from "./components/examples/file-upload/file-upload-root-provider";
 import { FileUploadWithField } from "./components/examples/file-upload/file-upload-with-field";
+import { HoverCardBasic } from "./components/examples/hover-card/hover-card-basic";
+import { HoverCardControlled } from "./components/examples/hover-card/hover-card-controlled";
+import { HoverCardPositioning } from "./components/examples/hover-card/hover-card-positioning";
+import { HoverCardRootProvider } from "./components/examples/hover-card/hover-card-root-provider";
 
 function App() {
   return (
@@ -143,6 +147,12 @@ function App() {
         <FileUploadBasic />
         <FileUploadWithField />
         <FileUploadRootProvider />
+      </section>
+      <section id="hover-card">
+        <HoverCardBasic />
+        <HoverCardControlled />
+        <HoverCardPositioning />
+        <HoverCardRootProvider />
       </section>
     </main>
   );
