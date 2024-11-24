@@ -115,6 +115,11 @@ import { QrCodeBasic } from "./components/examples/qr-code/qr-code-basic";
 import { QrCodeErrorCorrection } from "./components/examples/qr-code/qr-code-error-correction";
 import { QrCodeRootProvider } from "./components/examples/qr-code/qr-code-root-provider";
 import { QrCodeWithOverlay } from "./components/examples/qr-code/qr-code-with-overlay";
+import { RadioGroupBasic } from "./components/examples/radio-group/radio-group-basic";
+import { RadioGroupDisabled } from "./components/examples/radio-group/radio-group-disabled";
+import { RadioGroupInitialValue } from "./components/examples/radio-group/radio-group-initial-value";
+import { RadioGroupOnEvent } from "./components/examples/radio-group/radio-group-on-event";
+import { RadioGroupRootProvider } from "./components/examples/radio-group/radio-group-root-provider";
 
 function App() {
   return (
@@ -281,6 +286,13 @@ function App() {
         <QrCodeWithOverlay />
         <QrCodeErrorCorrection />
         <QrCodeRootProvider />
+      </section>
+      <section id="radio-group">
+        <RadioGroupBasic />
+        <RadioGroupDisabled />
+        <RadioGroupInitialValue />
+        <RadioGroupOnEvent />
+        <RadioGroupRootProvider />
       </section>
     </main>
   );
