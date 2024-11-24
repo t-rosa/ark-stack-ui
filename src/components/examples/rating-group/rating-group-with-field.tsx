@@ -1,0 +1,33 @@
+import { Field } from "@/components/ui/field";
+import { RatingGroup } from "@/components/ui/rating-group";
+import { type FieldRootProps } from "@ark-ui/react/field";
+import { StarIcon } from "lucide-react";
+
+export function RatingGroupWithField(props: FieldRootProps) {
+  return (
+    <Field.Root {...props}>
+      <RatingGroup.Root count={5} defaultValue={3}>
+        <RatingGroup.Label>Label</RatingGroup.Label>
+        <RatingGroup.Control>
+          <RatingGroup.Context>
+            {({ items }) =>
+              items.map((item) => (
+                <RatingGroup.Item key={item} index={item}>
+                  <RatingGroup.ItemContext>
+                    {({ highlighted }) =>
+                      highlighted ? <StarIcon fill="current" /> : <StarIcon />
+                    }
+                  </RatingGroup.ItemContext>
+                </RatingGroup.Item>
+              ))
+            }
+          </RatingGroup.Context>
+          <RatingGroup.HiddenInput />
+        </RatingGroup.Control>
+      </RatingGroup.Root>
+
+      <Field.HelperText>Additional Info</Field.HelperText>
+      <Field.ErrorText>Error Info</Field.ErrorText>
+    </Field.Root>
+  );
+}
