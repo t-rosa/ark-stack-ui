@@ -81,6 +81,14 @@ import { PaginationBasic } from "./components/examples/pagination/pagination-bai
 import { PaginationControlled } from "./components/examples/pagination/pagination-controlled";
 import { PaginationCustomized } from "./components/examples/pagination/pagination-customized";
 import { PaginationRootProvider } from "./components/examples/pagination/pagination-root-provider";
+import { PinInputBasic } from "./components/examples/pin-input/pin-input-basic";
+import { PinInputBlurred } from "./components/examples/pin-input/pin-input-blurred";
+import { PinInputCustomized } from "./components/examples/pin-input/pin-input-customized";
+import { PinInputInitialValue } from "./components/examples/pin-input/pin-input-initial-value";
+import { PinInputOTPMode } from "./components/examples/pin-input/pin-input-otp-mode";
+import { PinInputRootProvider } from "./components/examples/pin-input/pin-input-root-provider";
+import { PinInputWithField } from "./components/examples/pin-input/pin-input-with-field";
+import { PinInpuWithMask } from "./components/examples/pin-input/pin-input-with-mask";
 
 function App() {
   return (
@@ -203,6 +211,16 @@ function App() {
         <PaginationControlled />
         <PaginationCustomized />
         <PaginationRootProvider />
+      </section>
+      <section id="pin-input">
+        <PinInputBasic />
+        <PinInputInitialValue />
+        <PinInputCustomized />
+        <PinInputBlurred />
+        <PinInputOTPMode />
+        <PinInpuWithMask />
+        <PinInputWithField />
+        <PinInputRootProvider />
       </section>
     </main>
   );
