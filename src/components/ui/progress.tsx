@@ -14,6 +14,16 @@ const styles = {
   view: "",
 };
 
+const Root = React.forwardRef<HTMLDivElement, Primitive.RootProps>(
+  ({ className, ...props }, ref) => (
+    <Primitive.Root
+      ref={ref}
+      className={cn(styles.root, className)}
+      {...props}
+    />
+  )
+);
+
 const Circle = React.forwardRef<SVGSVGElement, Primitive.CircleProps>(
   ({ className, ...props }, ref) => (
     <Primitive.Circle
@@ -96,6 +106,7 @@ const View = React.forwardRef<HTMLSpanElement, Primitive.ViewProps>(
   )
 );
 
+Root.displayName = "Root";
 Circle.displayName = "Circle";
 CircleRange.displayName = "CircleRange";
 CircleTrack.displayName = "CircleTrack";
@@ -105,7 +116,7 @@ Track.displayName = "Track";
 ValueText.displayName = "ValueText";
 View.displayName = "View";
 
-Progress.Root = Primitive.Root;
+Progress.Root = Root;
 Progress.Circle = Circle;
 Progress.CircleRange = CircleRange;
 Progress.CircleTrack = CircleTrack;
