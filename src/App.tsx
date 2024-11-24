@@ -98,6 +98,12 @@ import { PopoverOnOpenChange } from "./components/examples/popover/popover-on-op
 import { PopoverPortalled } from "./components/examples/popover/popover-portalled";
 import { PopoverPositioning } from "./components/examples/popover/popover-positioning";
 import { PopoverRootProvider } from "./components/examples/popover/popover-root-provider";
+import { ProgressCircularBasic } from "./components/examples/progress/progress-circular-basic";
+import { ProgressCircularIndeterminate } from "./components/examples/progress/progress-circular-indeterminate";
+import { ProgressCircularInitialValue } from "./components/examples/progress/progress-circular-initial-value";
+import { ProgressCircularMinMax } from "./components/examples/progress/progress-circular-min-max";
+import { ProgressCircularRootProvider } from "./components/examples/progress/progress-circular-root-provider";
+import { ProgressCircularValueText } from "./components/examples/progress/progress-circular-value-text";
 
 function App() {
   return (
@@ -241,6 +247,14 @@ function App() {
         <PopoverPositioning />
         <PopoverModal />
         <PopoverRootProvider />
+      </section>
+      <section id="progress-circular">
+        <ProgressCircularBasic />
+        <ProgressCircularInitialValue />
+        <ProgressCircularMinMax />
+        <ProgressCircularIndeterminate />
+        <ProgressCircularValueText />
+        <ProgressCircularRootProvider />
       </section>
     </main>
   );
