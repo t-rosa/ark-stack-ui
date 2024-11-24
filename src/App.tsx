@@ -111,6 +111,10 @@ import { ProgressLinearMinMax } from "./components/examples/progress/progress-li
 import { ProgressLinearRootProvider } from "./components/examples/progress/progress-linear-root-provider";
 import { ProgressLinearValueText } from "./components/examples/progress/progress-linear-value-text";
 import { ProgressLinearVertical } from "./components/examples/progress/progress-linear-vertical";
+import { QrCodeBasic } from "./components/examples/qr-code/qr-code-basic";
+import { QrCodeErrorCorrection } from "./components/examples/qr-code/qr-code-error-correction";
+import { QrCodeRootProvider } from "./components/examples/qr-code/qr-code-root-provider";
+import { QrCodeWithOverlay } from "./components/examples/qr-code/qr-code-with-overlay";
 
 function App() {
   return (
@@ -271,6 +275,12 @@ function App() {
         <ProgressLinearValueText />
         <ProgressLinearVertical />
         <ProgressLinearRootProvider />
+      </section>
+      <section id="qr-code">
+        <QrCodeBasic />
+        <QrCodeWithOverlay />
+        <QrCodeErrorCorrection />
+        <QrCodeRootProvider />
       </section>
     </main>
   );
