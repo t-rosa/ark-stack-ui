@@ -77,6 +77,10 @@ import { NumberInputNoClamp } from "./components/examples/number-input/number-in
 import { NumberInputRootProvider } from "./components/examples/number-input/number-input-root-provider";
 import { NumberInputScrubber } from "./components/examples/number-input/number-input-scrubber";
 import { NumberInputWithField } from "./components/examples/number-input/number-input-with-field";
+import { PaginationBasic } from "./components/examples/pagination/pagination-baisc";
+import { PaginationControlled } from "./components/examples/pagination/pagination-controlled";
+import { PaginationCustomized } from "./components/examples/pagination/pagination-customized";
+import { PaginationRootProvider } from "./components/examples/pagination/pagination-root-provider";
 
 function App() {
   return (
@@ -193,6 +197,12 @@ function App() {
         <NumberInputFormatted />
         <NumberInputWithField />
         <NumberInputRootProvider />
+      </section>
+      <section id="pagination">
+        <PaginationBasic />
+        <PaginationControlled />
+        <PaginationCustomized />
+        <PaginationRootProvider />
       </section>
     </main>
   );
