@@ -14,7 +14,7 @@ const Root = React.forwardRef<HTMLDivElement, Primitive.RootProps>(
   ({ className, ...props }, ref) => (
     <Primitive.Root
       ref={ref}
-      className={cn(styles.ellipsis, className)}
+      className={cn(styles.root, className)}
       {...props}
     />
   )
