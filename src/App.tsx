@@ -129,6 +129,11 @@ import { RatingGroupInitialValue } from "./components/examples/rating-group/rati
 import { RatingGroupReadOnly } from "./components/examples/rating-group/rating-group-read-only";
 import { RatingGroupRootProvider } from "./components/examples/rating-group/rating-group-root-provider";
 import { RatingGroupWithField } from "./components/examples/rating-group/rating-group-with-field";
+import { SegmentGroupDisabled } from "./components/examples/segment-group/segment-gorup-disabled";
+import { SegmentGroupBasic } from "./components/examples/segment-group/segment-group-basic";
+import { SegmentGroupControlled } from "./components/examples/segment-group/segment-group-controlled";
+import { SegmentGroupInitialValue } from "./components/examples/segment-group/segment-group-initial-value";
+import { SegmentGroupRootProvider } from "./components/examples/segment-group/segment-group-root-provider";
 
 function App() {
   return (
@@ -313,6 +318,13 @@ function App() {
         <RatingGroupFormUsage />
         <RatingGroupWithField />
         <RatingGroupRootProvider />
+      </section>
+      <section id="segment-group">
+        <SegmentGroupBasic />
+        <SegmentGroupInitialValue />
+        <SegmentGroupControlled />
+        <SegmentGroupDisabled />
+        <SegmentGroupRootProvider />
       </section>
     </main>
   );
