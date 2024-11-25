@@ -154,6 +154,11 @@ import { SliderRootProvider } from "./components/examples/slider/slider-root-pro
 import { SliderStep } from "./components/examples/slider/slider-step";
 import { SliderVertical } from "./components/examples/slider/slider-vertical";
 import { SliderWithMarks } from "./components/examples/slider/slider-with-mark";
+import { SplitterBasic } from "./components/examples/splitter/splitter-basic";
+import { SplitterEvents } from "./components/examples/splitter/splitter-events";
+import { SplitterRenderProp } from "./components/examples/splitter/splitter-render-prop";
+import { SplitterRootProvider } from "./components/examples/splitter/splitter-root-provider";
+import { SplitterVertical } from "./components/examples/splitter/splitter-vertical";
 
 function App() {
   return (
@@ -372,6 +377,13 @@ function App() {
         <SliderVertical />
         <SliderCenterOrigin />
         <SliderRootProvider />
+      </section>
+      <section id="splitter">
+        <SplitterBasic />
+        <SplitterRenderProp />
+        <SplitterEvents />
+        <SplitterVertical />
+        <SplitterRootProvider />
       </section>
     </main>
   );
