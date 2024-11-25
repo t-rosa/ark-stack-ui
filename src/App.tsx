@@ -161,6 +161,11 @@ import { SplitterRootProvider } from "./components/examples/splitter/splitter-ro
 import { SplitterVertical } from "./components/examples/splitter/splitter-vertical";
 import { StepsBasic } from "./components/examples/steps/steps-basic";
 import { StepsRootProvider } from "./components/examples/steps/steps-root-provider";
+import { SwitchBasic } from "./components/examples/switch/switch-basic";
+import { SwitchControlled } from "./components/examples/switch/switch-controlled";
+import { SwitchRenderProp } from "./components/examples/switch/switch-render-prop";
+import { SwitchRootProvider } from "./components/examples/switch/switch-root-provider";
+import { SwitchWithField } from "./components/examples/switch/switch-with-field";
 
 function App() {
   return (
@@ -390,6 +395,13 @@ function App() {
       <section id="steps">
         <StepsBasic />
         <StepsRootProvider />
+      </section>
+      <section id="switch">
+        <SwitchBasic />
+        <SwitchControlled />
+        <SwitchRenderProp />
+        <SwitchWithField />
+        <SwitchRootProvider />
       </section>
     </main>
   );
