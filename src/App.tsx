@@ -134,6 +134,12 @@ import { SegmentGroupBasic } from "./components/examples/segment-group/segment-g
 import { SegmentGroupControlled } from "./components/examples/segment-group/segment-group-controlled";
 import { SegmentGroupInitialValue } from "./components/examples/segment-group/segment-group-initial-value";
 import { SegmentGroupRootProvider } from "./components/examples/segment-group/segment-group-root-provider";
+import { SelectAdvanced } from "./components/examples/select/select-advanced";
+import { SelectBasic } from "./components/examples/select/select-basic";
+import { SelectControlled } from "./components/examples/select/select-controlled";
+import { SelectFormLibrary } from "./components/examples/select/select-form-library";
+import { SelectMultiple } from "./components/examples/select/select-multiple";
+import { SelectWithField } from "./components/examples/select/select-with-field";
 
 function App() {
   return (
@@ -325,6 +331,15 @@ function App() {
         <SegmentGroupControlled />
         <SegmentGroupDisabled />
         <SegmentGroupRootProvider />
+      </section>
+      <section id="select">
+        <SelectBasic />
+        <SelectAdvanced />
+        <SelectMultiple />
+        <SelectControlled />
+        <SelectFormLibrary />
+        <SelectWithField />
+        {/* <SelectRootProvider /> */}
       </section>
     </main>
   );
