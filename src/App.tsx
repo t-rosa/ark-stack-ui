@@ -140,6 +140,10 @@ import { SelectControlled } from "./components/examples/select/select-controlled
 import { SelectFormLibrary } from "./components/examples/select/select-form-library";
 import { SelectMultiple } from "./components/examples/select/select-multiple";
 import { SelectWithField } from "./components/examples/select/select-with-field";
+import { SignaturePadBasic } from "./components/examples/signature-pad/signature-pad-basic";
+import { SignaturePadImagePreview } from "./components/examples/signature-pad/signature-pad-image-preview";
+import { SignaturePadRootProvider } from "./components/examples/signature-pad/signature-pad-root-provider";
+import { SignaturePadWithField } from "./components/examples/signature-pad/signature-pad-with-field";
 
 function App() {
   return (
@@ -340,6 +344,12 @@ function App() {
         <SelectFormLibrary />
         <SelectWithField />
         {/* <SelectRootProvider /> */}
+      </section>
+      <section id="signature-pad">
+        <SignaturePadBasic />
+        <SignaturePadImagePreview />
+        <SignaturePadWithField />
+        <SignaturePadRootProvider />
       </section>
     </main>
   );
