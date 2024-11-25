@@ -159,6 +159,8 @@ import { SplitterEvents } from "./components/examples/splitter/splitter-events";
 import { SplitterRenderProp } from "./components/examples/splitter/splitter-render-prop";
 import { SplitterRootProvider } from "./components/examples/splitter/splitter-root-provider";
 import { SplitterVertical } from "./components/examples/splitter/splitter-vertical";
+import { StepsBasic } from "./components/examples/steps/steps-basic";
+import { StepsRootProvider } from "./components/examples/steps/steps-root-provider";
 
 function App() {
   return (
@@ -384,6 +386,10 @@ function App() {
         <SplitterEvents />
         <SplitterVertical />
         <SplitterRootProvider />
+      </section>
+      <section id="steps">
+        <StepsBasic />
+        <StepsRootProvider />
       </section>
     </main>
   );
