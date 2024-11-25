@@ -41,7 +41,7 @@ const Content = React.forwardRef<HTMLDivElement, Primitive.ContentProps>(
   ({ className, ...props }, ref) => (
     <Primitive.Content
       ref={ref}
-      className={cn(styles.completedContent, className)}
+      className={cn(styles.content, className)}
       {...props}
     />
   )
