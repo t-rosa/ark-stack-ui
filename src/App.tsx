@@ -144,6 +144,16 @@ import { SignaturePadBasic } from "./components/examples/signature-pad/signature
 import { SignaturePadImagePreview } from "./components/examples/signature-pad/signature-pad-image-preview";
 import { SignaturePadRootProvider } from "./components/examples/signature-pad/signature-pad-root-provider";
 import { SignaturePadWithField } from "./components/examples/signature-pad/signature-pad-with-field";
+import { SliderBasic } from "./components/examples/slider/slider-basic";
+import { SliderCenterOrigin } from "./components/examples/slider/slider-center-origin";
+import { SliderInitialValue } from "./components/examples/slider/slider-initial-value";
+import { SliderMinMax } from "./components/examples/slider/slider-min-max";
+import { SliderOnEvent } from "./components/examples/slider/slider-on-event";
+import { SliderRange } from "./components/examples/slider/slider-range";
+import { SliderRootProvider } from "./components/examples/slider/slider-root-provider";
+import { SliderStep } from "./components/examples/slider/slider-step";
+import { SliderVertical } from "./components/examples/slider/slider-vertical";
+import { SliderWithMarks } from "./components/examples/slider/slider-with-mark";
 
 function App() {
   return (
@@ -350,6 +360,18 @@ function App() {
         <SignaturePadImagePreview />
         <SignaturePadWithField />
         <SignaturePadRootProvider />
+      </section>
+      <section id="slider">
+        <SliderBasic />
+        <SliderRange />
+        <SliderWithMarks />
+        <SliderInitialValue />
+        <SliderMinMax />
+        <SliderStep />
+        <SliderOnEvent />
+        <SliderVertical />
+        <SliderCenterOrigin />
+        <SliderRootProvider />
       </section>
     </main>
   );
