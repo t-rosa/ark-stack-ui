@@ -166,6 +166,15 @@ import { SwitchControlled } from "./components/examples/switch/switch-controlled
 import { SwitchRenderProp } from "./components/examples/switch/switch-render-prop";
 import { SwitchRootProvider } from "./components/examples/switch/switch-root-provider";
 import { SwitchWithField } from "./components/examples/switch/switch-with-field";
+import { TabsBasic } from "./components/examples/tabs/tabs-basic";
+import { TabsControlled } from "./components/examples/tabs/tabs-controlled";
+import { TabsDisabledTab } from "./components/examples/tabs/tabs-disabled-tab";
+import { TabsIndicator } from "./components/examples/tabs/tabs-indicator";
+import { TabsInitialTab } from "./components/examples/tabs/tabs-initial-tab";
+import { TabsLazyMount } from "./components/examples/tabs/tabs-lazy-mount";
+import { TabsManual } from "./components/examples/tabs/tabs-manual";
+import { TabsRootProvider } from "./components/examples/tabs/tabs-root-provider";
+import { TabsVertical } from "./components/examples/tabs/tabs-vertical";
 
 function App() {
   return (
@@ -402,6 +411,17 @@ function App() {
         <SwitchRenderProp />
         <SwitchWithField />
         <SwitchRootProvider />
+      </section>
+      <section id="tabs">
+        <TabsBasic />
+        <TabsInitialTab />
+        <TabsIndicator />
+        <TabsLazyMount />
+        <TabsDisabledTab />
+        <TabsControlled />
+        <TabsVertical />
+        <TabsManual />
+        <TabsRootProvider />
       </section>
     </main>
   );
