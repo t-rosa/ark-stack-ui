@@ -175,6 +175,16 @@ import { TabsLazyMount } from "./components/examples/tabs/tabs-lazy-mount";
 import { TabsManual } from "./components/examples/tabs/tabs-manual";
 import { TabsRootProvider } from "./components/examples/tabs/tabs-root-provider";
 import { TabsVertical } from "./components/examples/tabs/tabs-vertical";
+import { TagsInputBasic } from "./components/examples/tags-input/tags-input-basic";
+import { TagsInputBlurBehavior } from "./components/examples/tags-input/tags-input-blur-behavior";
+import { TagsInputDisabledEditing } from "./components/examples/tags-input/tags-input-disabled-editing";
+import { TagsInputInitialValue } from "./components/examples/tags-input/tags-input-initial-value";
+import { TagsInputMaxWithOverflow } from "./components/examples/tags-input/tags-input-max-with-overflow";
+import { TagsInputOnEvent } from "./components/examples/tags-input/tags-input-on-event";
+import { TagsInputPasteBehavior } from "./components/examples/tags-input/tags-input-paste-behavior";
+import { TagsInputRootProvider } from "./components/examples/tags-input/tags-input-root-provider";
+import { TagsInputValidated } from "./components/examples/tags-input/tags-input-validated";
+import { TagsInputWithField } from "./components/examples/tags-input/tags-input-with-field";
 
 function App() {
   return (
@@ -422,6 +432,18 @@ function App() {
         <TabsVertical />
         <TabsManual />
         <TabsRootProvider />
+      </section>
+      <section id="tags-input">
+        <TagsInputBasic />
+        <TagsInputInitialValue />
+        <TagsInputMaxWithOverflow />
+        <TagsInputValidated />
+        <TagsInputBlurBehavior />
+        <TagsInputPasteBehavior />
+        <TagsInputDisabledEditing />
+        <TagsInputOnEvent />
+        <TagsInputWithField />
+        <TagsInputRootProvider />
       </section>
     </main>
   );
