@@ -193,6 +193,10 @@ import { ToggleGroupBasic } from "./components/examples/toggle-group/toggle-grou
 import { ToggleGroupInitialValue } from "./components/examples/toggle-group/toggle-group-initial-value";
 import { ToggleGroupMultiple } from "./components/examples/toggle-group/toggle-group-multiple";
 import { ToggleGroupRootProvider } from "./components/examples/toggle-group/toggle-group-root-provider";
+import { ToggleBasic } from "./components/examples/toggle/toggle-basic";
+import { ToggleControlled } from "./components/examples/toggle/toggle-controlled";
+import { ToggleDisabled } from "./components/examples/toggle/toggle-disabled";
+import { ToggleIndicator } from "./components/examples/toggle/toggle-indicator";
 
 function App() {
   return (
@@ -464,6 +468,12 @@ function App() {
         <ToggleGroupMultiple />
         <ToggleGroupInitialValue />
         <ToggleGroupRootProvider />
+      </section>
+      <section id="toggle">
+        <ToggleBasic />
+        <ToggleControlled />
+        <ToggleDisabled />
+        <ToggleIndicator />
       </section>
     </main>
   );
