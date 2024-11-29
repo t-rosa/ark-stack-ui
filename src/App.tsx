@@ -189,6 +189,10 @@ import { TimerBasic } from "./components/examples/timer/timer-basic";
 import { TimerCountdown } from "./components/examples/timer/timer-countdown";
 import { TimerEvents } from "./components/examples/timer/timer-events";
 import { TimerRootProvider } from "./components/examples/timer/timer-root-provider";
+import { ToggleGroupBasic } from "./components/examples/toggle-group/toggle-group-basic";
+import { ToggleGroupInitialValue } from "./components/examples/toggle-group/toggle-group-initial-value";
+import { ToggleGroupMultiple } from "./components/examples/toggle-group/toggle-group-multiple";
+import { ToggleGroupRootProvider } from "./components/examples/toggle-group/toggle-group-root-provider";
 
 function App() {
   return (
@@ -454,6 +458,12 @@ function App() {
         <TimerCountdown />
         <TimerEvents />
         <TimerRootProvider />
+      </section>
+      <section id="toggle-group">
+        <ToggleGroupBasic />
+        <ToggleGroupMultiple />
+        <ToggleGroupInitialValue />
+        <ToggleGroupRootProvider />
       </section>
     </main>
   );
