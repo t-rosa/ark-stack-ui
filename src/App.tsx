@@ -197,6 +197,13 @@ import { ToggleBasic } from "./components/examples/toggle/toggle-basic";
 import { ToggleControlled } from "./components/examples/toggle/toggle-controlled";
 import { ToggleDisabled } from "./components/examples/toggle/toggle-disabled";
 import { ToggleIndicator } from "./components/examples/toggle/toggle-indicator";
+import { TooltipArrow } from "./components/examples/tooltip/tooltip-arrow";
+import { TooltipBasic } from "./components/examples/tooltip/tooltip-basic";
+import { TooltipControlled } from "./components/examples/tooltip/tooltip-controlled";
+import { TooltipPositioning } from "./components/examples/tooltip/tooltip-positioning";
+import { TooltipRenderFn } from "./components/examples/tooltip/tooltip-render-fn";
+import { TooltipRootProvider } from "./components/examples/tooltip/tooltip-root-provider";
+import { TooltipTimings } from "./components/examples/tooltip/tooltip-timings";
 
 function App() {
   return (
@@ -474,6 +481,15 @@ function App() {
         <ToggleControlled />
         <ToggleDisabled />
         <ToggleIndicator />
+      </section>
+      <section id="tooltip">
+        <TooltipBasic />
+        <TooltipControlled />
+        <TooltipRenderFn />
+        <TooltipArrow />
+        <TooltipTimings />
+        <TooltipPositioning />
+        <TooltipRootProvider />
       </section>
     </main>
   );
