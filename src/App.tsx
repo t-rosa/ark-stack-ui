@@ -185,6 +185,10 @@ import { TagsInputPasteBehavior } from "./components/examples/tags-input/tags-in
 import { TagsInputRootProvider } from "./components/examples/tags-input/tags-input-root-provider";
 import { TagsInputValidated } from "./components/examples/tags-input/tags-input-validated";
 import { TagsInputWithField } from "./components/examples/tags-input/tags-input-with-field";
+import { TimerBasic } from "./components/examples/timer/timer-basic";
+import { TimerCountdown } from "./components/examples/timer/timer-countdown";
+import { TimerEvents } from "./components/examples/timer/timer-events";
+import { TimerRootProvider } from "./components/examples/timer/timer-root-provider";
 
 function App() {
   return (
@@ -444,6 +448,12 @@ function App() {
         <TagsInputOnEvent />
         <TagsInputWithField />
         <TagsInputRootProvider />
+      </section>
+      <section id="timer">
+        <TimerBasic />
+        <TimerCountdown />
+        <TimerEvents />
+        <TimerRootProvider />
       </section>
     </main>
   );
