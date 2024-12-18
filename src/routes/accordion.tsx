@@ -1,0 +1,22 @@
+import { AccordionBasic } from "@/components/examples/accordion/accordion-basic";
+import { AccordionCollapsible } from "@/components/examples/accordion/accordion-collapsible";
+import { AccordionHorizontal } from "@/components/examples/accordion/accordion-horizontal";
+import { AccordionMultiple } from "@/components/examples/accordion/accordion-multiple";
+import { AccordionRootProvider } from "@/components/examples/accordion/accordion-root-provider";
+import { createFileRoute } from "@tanstack/react-router";
+
+export const Route = createFileRoute("/accordion")({
+  component: AccordionPage,
+});
+
+function AccordionPage() {
+  return (
+    <section id="accordion">
+      <AccordionBasic />
+      <AccordionCollapsible />
+      <AccordionHorizontal />
+      <AccordionMultiple />
+      <AccordionRootProvider />
+    </section>
+  );
+}
