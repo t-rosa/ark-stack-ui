@@ -204,6 +204,8 @@ import { TooltipPositioning } from "./components/examples/tooltip/tooltip-positi
 import { TooltipRenderFn } from "./components/examples/tooltip/tooltip-render-fn";
 import { TooltipRootProvider } from "./components/examples/tooltip/tooltip-root-provider";
 import { TooltipTimings } from "./components/examples/tooltip/tooltip-timings";
+import { TreeViewBasic } from "./components/examples/tree-view/tree-view-basic";
+import { TreeViewRootProvider } from "./components/examples/tree-view/tree-view-root-provider";
 
 function App() {
   return (
@@ -490,6 +492,10 @@ function App() {
         <TooltipTimings />
         <TooltipPositioning />
         <TooltipRootProvider />
+      </section>
+      <section id="tree-view">
+        <TreeViewBasic />
+        <TreeViewRootProvider />
       </section>
     </main>
   );
