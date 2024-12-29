@@ -11,12 +11,22 @@ export const Route = createFileRoute("/accordion")({
 
 function AccordionPage() {
   return (
-    <section id="accordion">
-      <AccordionBasic />
-      <AccordionCollapsible />
-      <AccordionHorizontal />
-      <AccordionMultiple />
-      <AccordionRootProvider />
+    <section id="accordion" className="max-w-xl grid gap-3">
+      <div className="border p-3">
+        <AccordionBasic />
+      </div>
+      <div className="border p-3">
+        <AccordionCollapsible />
+      </div>
+      <div className="border p-3">
+        <AccordionHorizontal />
+      </div>
+      <div className="border p-3">
+        <AccordionMultiple />
+      </div>
+      <div className="border p-3">
+        <AccordionRootProvider />
+      </div>
     </section>
   );
 }

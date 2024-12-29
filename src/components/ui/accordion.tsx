@@ -3,11 +3,14 @@ import { Accordion as Primitive } from "@ark-ui/react";
 import * as React from "react";
 
 const styles = {
-  root: "border",
-  itemContent: "",
-  itemIndicator: "",
-  item: "",
-  itemTrigger: "",
+  root: "",
+  itemContent:
+    "data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up overflow-hidden text-sm",
+  itemIndicator:
+    "[&[data-state=open]>svg]:rotate-180 [&>svg]:size-4 [&>svg]:duration-200",
+  item: "border-b pb-3",
+  itemTrigger:
+    "flex w-full justify-between items-center hover:underline font-medium",
 };
 
 const Root = React.forwardRef<HTMLDivElement, Primitive.RootProps>(
